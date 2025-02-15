@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="2empage.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="main2">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">FORWARD</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="website.html">HOME</a></li>
+                    <li><a href="3empage.html">ABOUT</a></li>
+                    <li><a href="2empage.html">DEALERSHIP</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="complaints.html">COMPLAINTS</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="search" class="srch" placeholder="type to search">
+                <a href="#"><button class="btn">search</button></a>
+            </div>
+        </div>
+
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="img1-1.png" alt="Dodge Challenger R/T">
+                <h3>Dodge Challenger R/T</h3>
+                <p>Muscle car with a 5.7L HEMI V8.</p>
+                <button class="info-btn" onclick="toggleInfo('challenger-info')">More Info</button>
+                <div class="car-info" id="challenger-info">
+                    <p><strong>Engine:</strong> 5.7L HEMI V8</p>
+                    <p><strong>Horsepower:</strong> 375 hp</p>
+                    <p><strong>0-60 mph:</strong> ~5 sec</p>
+                    <p><strong>Transmission:</strong> Auto/Manual</p>
+                    <p><strong>Drive Type:</strong> RWD</p>
+                    <p><strong>Fuel Economy:</strong> 15-25 mpg</p>
+                </div>
+            </div>
+
+
+            <div class="car-card">
+                <img src="6.jpg" alt="Mercedes AMG">
+                <h3>Mercedes AMG</h3>
+                <p>Luxury meets performance.</p>
+                <button class="info-btn" onclick="toggleInfo('amg-info')">More Info</button>
+                <div class="car-info" id="amg-info">
+                    <p><strong>Engine:</strong> 4.0L Twin-Turbo V8</p>
+                    <p><strong>Horsepower:</strong> 469-720 hp</p>
+                    <p><strong>0-60 mph:</strong> ~3.5 sec</p>
+                    <p><strong>Transmission:</strong> 9-speed Auto</p>
+                    <p><strong>Drive Type:</strong> RWD/AWD</p>
+                    <p><strong>Fuel Economy:</strong> 15-22 mpg</p>
+                </div>
+            </div>
+
+
+            <div class="car-card">
+                <img src="5.jpg" alt="Lamborghini Aventador">
+                <h3>Lamborghini Aventador</h3>
+                <p>A true supercar beast.</p>
+                <button class="info-btn" onclick="toggleInfo('lambo-info')">More Info</button>
+                <div class="car-info" id="lambo-info">
+                    <p><strong>Engine:</strong> 6.5L V12</p>
+                    <p><strong>Horsepower:</strong> 730 hp</p>
+                    <p><strong>0-60 mph:</strong> ~2.9 sec</p>
+                    <p><strong>Transmission:</strong> 7-speed Auto</p>
+                    <p><strong>Drive Type:</strong> AWD</p>
+                    <p><strong>Fuel Economy:</strong> 9-15 mpg</p>
+                </div>
+            </div>
+
+
+            <div class="car-card">
+                <img src="7.jpg" alt="Dodge Viper">
+                <h3>Dodge Viper</h3>
+                <p>A legendary American sports car.</p>
+                <button class="info-btn" onclick="toggleInfo('viper-info')">More Info</button>
+                <div class="car-info" id="viper-info">
+                    <p><strong>Engine:</strong> 8.4L V10</p>
+                    <p><strong>Horsepower:</strong> 645 hp</p>
+                    <p><strong>0-60 mph:</strong> ~3.3 sec</p>
+                    <p><strong>Transmission:</strong> 6-speed Manual</p>
+                    <p><strong>Drive Type:</strong> RWD</p>
+                    <p><strong>Fuel Economy:</strong> 12-19 mpg</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="car-card">
+                <img src="9.jpg" alt="Alpine A110">
+                <h3>Alpine A110</h3>
+                <p>A lightweight sports car known for its agile handling.</p>
+                <p class="tip">Classic Rally Legend</p>
+                <button class="info-btn" onclick="toggleInfo(this)">More Info</button>
+                <div class="car-info">
+                    <p>The Alpine A110 was originally launched in the 1960s and became famous for its rally performance.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="car-card">
+                <img src="8.jpg" alt="Dodge Challenger">
+                <h3>Dodge Challenger</h3>
+                <p>An American muscle car with raw power and an aggressive design.</p>
+                <p class="tip">High Performance</p>
+                <button class="info-btn" onclick="toggleInfo(this)">More Info</button>
+                <div class="car-info">
+                    <p>The Dodge Challenger has been an icon of American muscle cars, boasting powerful V8 engines.</p>
+                </div>
+            </div>
+
+
+            <div class="car-card">
+                <img src="11.jpg" alt="BMW 3 Series">
+                <h3>BMW 3 Series</h3>
+                <p>A premium sedan known for its balance of performance and luxury.</p>
+                <p class="tip">Perfect Daily Driver</p>
+                <button class="info-btn" onclick="toggleInfo(this)">More Info</button>
+                <div class="car-info">
+                    <p>The BMW 3 Series has been a benchmark in the sports sedan category, offering a blend of comfort
+                        and dynamic driving.</p>
+                </div>
+            </div>
+            <div class="car-card">
+                <img src="10.jpg" alt="Ford Mustang">
+                <h3>Ford Mustang</h3>
+                <p>Iconic American muscle car.</p>
+                <button class="info-btn" onclick="toggleInfo('mustang-info')">More Info</button>
+                <div class="car-info" id="mustang-info">
+                    <p><strong>Engine:</strong> 5.0L V8</p>
+                    <p><strong>Horsepower:</strong> 450 hp</p>
+                    <p><strong>0-60 mph:</strong> ~4.3 sec</p>
+                    <p><strong>Transmission:</strong> 6-speed Manual/10-speed Auto</p>
+                    <p><strong>Drive Type:</strong> RWD</p>
+                    <p><strong>Fuel Economy:</strong> 15-24 mpg</p>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="12.jpg" alt="Lincoln Continental">
+                <h3>Lincoln Continental</h3>
+                <p>Classic American luxury sedan.</p>
+                <button class="info-btn" onclick="toggleInfo('continental-info')">More Info</button>
+                <div class="car-info" id="continental-info">
+                    <p><strong>Engine:</strong> 3.7L V6</p>
+                    <p><strong>Horsepower:</strong> 305 hp</p>
+                    <p><strong>0-60 mph:</strong> ~6.8 sec</p>
+                    <p><strong>Transmission:</strong> 6-speed Auto</p>
+                    <p><strong>Drive Type:</strong> FWD/AWD</p>
+                    <p><strong>Fuel Economy:</strong> 16-24 mpg</p>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="13.jpg" alt="Jeep Wrangler Rubicon">
+                <h3>Jeep Wrangler Rubicon</h3>
+                <p>Rugged off-roader built for adventure.</p>
+                <button class="info-btn" onclick="toggleInfo('rubicon-info')">More Info</button>
+                <div class="car-info" id="rubicon-info">
+                    <p><strong>Engine:</strong> 3.6L V6</p>
+                    <p><strong>Horsepower:</strong> 285 hp</p>
+                    <p><strong>0-60 mph:</strong> ~6.8 sec</p>
+                    <p><strong>Transmission:</strong> 6-speed Manual/8-speed Auto</p>
+                    <p><strong>Drive Type:</strong> 4WD</p>
+                    <p><strong>Fuel Economy:</strong> 17-25 mpg</p>
+                </div>
+            </div>
+            <div class="car-card">
+                <img src="14.jpg" alt="Alfa Romeo 4C">
+                <h3>Alfa Romeo 4C</h3>
+                <p>Lightweight sports car with Italian flair.</p>
+                <button class="info-btn" onclick="toggleInfo('alfaromeo4c-info')">More Info</button>
+                <div class="car-info" id="alfaromeo4c-info">
+                    <p><strong>Engine:</strong> 1.75L Turbocharged Inline-4</p>
+                    <p><strong>Horsepower:</strong> 237 hp</p>
+                    <p><strong>0-60 mph:</strong> 4.1 seconds</p>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="15.jpg" alt="Rolls-Royce Ghost">
+                <h3>Rolls-Royce Ghost</h3>
+                <p>Ultimate luxury sedan with elegance.</p>
+                <button class="info-btn" onclick="toggleInfo('rollsroyceghost-info')">More Info</button>
+                <div class="car-info" id="rollsroyceghost-info">
+                    <p><strong>Engine:</strong> 6.75L V12</p>
+                    <p><strong>Horsepower:</strong> 563 hp</p>
+                    <p><strong>0-60 mph:</strong> 4.6 seconds</p>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="16.jpg" alt="Mercedes-Benz SL-Class">
+                <h3>Mercedes-Benz SL-Class</h3>
+                <p>Iconic grand tourer with power and style.</p>
+                <button class="info-btn" onclick="toggleInfo('slclass-info')">More Info</button>
+                <div class="car-info" id="slclass-info">
+                    <p><strong>Engine:</strong> 4.7L Twin-Turbo V8</p>
+                    <p><strong>Horsepower:</strong> 449 hp</p>
+                    <p><strong>0-60 mph:</strong> 4.3 seconds</p>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="2.jpg" alt="Audi S5">
+                <h3>Audi S5</h3>
+                <p>Sporty coupe blending performance and luxury.</p>
+                <button class="info-btn" onclick="toggleInfo('audis5-info')">More Info</button>
+                <div class="car-info" id="audis5-info">
+                    <p><strong>Engine:</strong> 3.0L Turbocharged V6</p>
+                    <p><strong>Horsepower:</strong> 349 hp</p>
+                    <p><strong>0-60 mph:</strong> 4.4 seconds</p>
+                </div>
+            </div>
+
+
+            <div class="car-card">
+                <img src="toyota.png" alt="Toyota Land Cruiser">
+                <h3>Toyota Land Cruiser</h3>
+                <p>Iconic full-size SUV known for reliability and off-road performance.</p>
+                <button class="info-btn" onclick="toggleInfo('landcruiser-info')">More Info</button>
+                <div class="car-info" id="landcruiser-info">
+                    <p><strong>Engine:</strong> 5.7L V8</p>
+                    <p><strong>Horsepower:</strong> 381 hp</p>
+                    <p><strong>0-60 mph:</strong> ~6.7 sec</p>
+                    <p><strong>Transmission:</strong> 8-speed Automatic</p>
+                    <p><strong>Drive Type:</strong> 4WD</p>
+                    <p><strong>Fuel Economy:</strong> 13-17 mpg</p>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="mustang.png" alt="Ford Mustang GT">
+                <h3>Ford Mustang GT</h3>
+                <p>Legendary American muscle car with thrilling performance.</p>
+                <button class="info-btn" onclick="toggleInfo('mustang-info')">More Info</button>
+                <div class="car-info" id="mustang-info">
+                    <p><strong>Engine:</strong> 5.0L V8</p>
+                    <p><strong>Horsepower:</strong> 450 hp</p>
+                    <p><strong>0-60 mph:</strong> ~4.2 sec</p>
+                    <p><strong>Transmission:</strong> 6-speed Manual/10-speed Auto</p>
+                    <p><strong>Drive Type:</strong> RWD</p>
+                    <p><strong>Fuel Economy:</strong> 15-24 mpg</p>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="chevrolet.png" alt="Chevrolet Camaro ZL1">
+                <h3>Chevrolet Camaro ZL1</h3>
+                <p>High-performance muscle car with supercharged power.</p>
+                <button class="info-btn" onclick="toggleInfo('camaro-info')">More Info</button>
+                <div class="car-info" id="camaro-info">
+                    <p><strong>Engine:</strong> 6.2L Supercharged V8</p>
+                    <p><strong>Horsepower:</strong> 650 hp</p>
+                    <p><strong>0-60 mph:</strong> ~3.5 sec</p>
+                    <p><strong>Transmission:</strong> 6-speed Manual/10-speed Auto</p>
+                    <p><strong>Drive Type:</strong> RWD</p>
+                    <p><strong>Fuel Economy:</strong> 14-20 mpg</p>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="Gwagon.png" alt="Mercedes-Benz G-Wagon">
+                <h3>Mercedes-Benz G-Wagon</h3>
+                <p>Luxury off-roader with a bold design and powerful performance.</p>
+                <button class="info-btn" onclick="toggleInfo('gwagon-info')">More Info</button>
+                <div class="car-info" id="gwagon-info">
+                    <p><strong>Engine:</strong> 4.0L Twin-Turbo V8</p>
+                    <p><strong>Horsepower:</strong> 577 hp</p>
+                    <p><strong>0-60 mph:</strong> ~4.5 sec</p>
+                    <p><strong>Transmission:</strong> 9-speed Automatic</p>
+                    <p><strong>Drive Type:</strong> AWD</p>
+                    <p><strong>Fuel Economy:</strong> 13-16 mpg</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            function toggleInfo(id) {
+                var info = document.getElementById(id);
+                if (info.style.display === "none" || info.style.display === "") {
+                    info.style.display = "block";
+                } else {
+                    info.style.display = "none";
+                }
+            }
+        </script>
+
+
+
+
+</body>
+
+</html>
